@@ -1,0 +1,146 @@
+.dashboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+    background-color: #0e1621;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.dashboard header {
+    display: flex;
+    width: 100%;
+    align-items: start;
+    justify-content: space-between;
+    height: 100%;
+    padding: 10px;
+}
+
+.header_modal {
+    position: absolute;
+    top: 60px; /* Adjust this value to place the modal right under the button */
+    right: 0;
+    background-color: #0e1621;
+    border: 1px solid silver;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    padding: 10px;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    border-top-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+.header_modal p {
+    margin: 0 0 10px 0;
+}
+
+.header_modal button {
+    background-color: #f44336; /* Red */
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.header_modal button:hover {
+    background-color: #d32f2f;
+}
+
+.username_ava {
+    background-color: rgb(151, 178, 219);
+    border-radius: 50%;
+    border: 1px solid silver;
+    padding: 15px;
+    position: relative;
+    left: 5px;
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+&:hover{
+    transform: rotate(25deg);
+}}
+
+.dashboard header h2{
+    font-weight: 400;
+    font-size: 1.1rem;
+    color: rgb(199, 190, 190);
+}
+
+.dashboard header span {
+    font-size: 1.5rem;
+    color: white;
+}
+
+.token {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    max-width: 200px;
+    gap: 10px;
+}
+
+.token p{
+    font-size: 0.6rem;
+}
+
+section button {
+    border-radius: 12px;
+    padding: 8px;
+    border: 1px solid silver;
+    color: rgb(85, 76, 76);
+    transition: all 0.2s ease-in;
+    cursor: pointer;
+&:hover{
+    opacity: 0.8;
+}}
+
+.logout {
+    border-radius: 12px;
+    padding: 15px;
+    border: none;
+    color: rgb(85, 76, 76);
+    transition: all 0.2s ease-in;
+    cursor: pointer;
+    margin-right: 10px;
+    background-color: #2b5278;
+    color: white;
+&:hover{
+    opacity: 0.8;
+}}
+
+.dashboard header div {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 10px;
+    gap: 1rem;
+}
+
+.error_user {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #0e1621;
+}
+
+.error_user h3 {
+    color: white;
+}
+
+.error_user button{
+    padding: 1rem;
+    border-radius: 12px;
+    border: none;
+    color: black;
+    transition: all 0.2s ease-in;
+    cursor: pointer;
+    box-shadow: 0px 0px 6px grey;
+&:hover{
+    box-shadow: 0px 0px 16px grey;
+}}
