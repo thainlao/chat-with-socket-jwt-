@@ -15,29 +15,4 @@ to Start
 4) Каждое сообщение отправленное в личном чате также сохраняется в бд и подгружается для пользователей которые перезагрузили страницу
 
 
-CREATE TABLE users (
-    id SERIAL PRIMARY KEY,
-    username TEXT NOT NULL,
-    password TEXT NOT NULL,
-);
-
-CREATE TABLE chat_room_users (
-    chat_room_id SERIAL PRIMARY KEY,
-    user_ids INTEGER[],
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-);
-
-CREATE TABLE messages (
-    message_id SERIAL PRIMARY KEY,
-    chat_room_id INTEGER NOT NULL REFERENCES chat_room_users(chat_room_id) ON DELETE CASCADE,
-    curusername INTEGER NOT NULL,
-    content TEXT NOT NULL,
-    timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-);
-
-CREATE TABLE global_messages (
-    message_id SERIAL PRIMARY KEY,
-    curusername INTEGER NOT NULL,
-    content TEXT NOT NULL,
-    timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-)
+![image](https://github.com/thainlao/chat-with-socket-jwt-/assets/121868297/fb13e3df-24ef-4b2b-81da-050618d34b36)
