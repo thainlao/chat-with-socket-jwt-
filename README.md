@@ -1,8 +1,9 @@
 React + Nest JS + Docker + TypeScript + PosgreSQL +  Vite;
 
 to Start
-1) cd server/ npm i/ npm run start:dev
-2) cd client/ npm i/ npm run dev
+1) git clone https://github.com/thainlao/chat-with-socket-jwt-/tree/main
+2) cd server/ npm i/ npm run start:dev
+3) cd client/ npm i/ npm run dev
 
 Функциональность:
 
